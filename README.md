@@ -173,4 +173,4 @@ The project structure is shown below with the python requirements listed in the 
 ## Resources Used for This Project
 
 * Udacity Machine Learning DevOps Engineer Nanodegree: [here](https://www.udacity.com/course/machine-learning-dev-ops-engineer-nanodegree--nd0821) <br>
-* Noah Gift's Pragamatic AI / ML Ops Youtube Channel: [here]https://www.youtube.com/channel/UCNDfiL0D1LUeKWAkRE1xO5Q
+* Noah Gift's Pragamatic AI / ML Ops Youtube Channel: [here](https://www.youtube.com/channel/UCNDfiL0D1LUeKWAkRE1xO5Q)
