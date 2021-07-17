@@ -2,7 +2,9 @@
 
 <kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/blob/main/images/churn-leaky-bucket.JPG"/> </kbd>
 
-**Project description:** In this project, we implement an end to end solution to identify credit card customers that are most likely to churn (binary classification). Customer information such  as age, salary, marital_status, credit card limit, credit card category etc. are provided. 16.07% of customers in the dataset have churned. The complete project follows PEP8 coding standards and engineering best practices for implementing software and includes a Python package which uses machine learning to predict customer churn. <br>
+## Project description
+
+In this project, we implement an end to end solution to identify credit card customers that are most likely to churn (binary classification). Customer information such  as age, salary, marital_status, credit card limit, credit card category etc. are provided. 16.07% of customers in the dataset have churned. The complete project follows PEP8 coding standards and engineering best practices for implementing software and includes a Python package which uses machine learning to predict customer churn. <br>
 
 The main python script is automated to perform the following end to end data science workflow : 
 
