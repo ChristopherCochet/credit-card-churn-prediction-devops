@@ -1,12 +1,10 @@
 # Predict Customer Churn
 
-
-<kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/blob/main/images/project-overview.PNG"/> </kbd>
-
+<kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/blob/main/images/churn-leaky-bucket.JPG"/> </kbd>
 
 **Project description:** In this project, we implement an end to end solution to identify credit card customers that are most likely to churn (binary classification). Customer information such  as age, salary, marital_status, credit card limit, credit card category etc. are provided. 16.07% of customers in the dataset have churned. The complete project follows PEP8 coding standards and engineering best practices for implementing software and includes a Python package which uses machine learning to predict customer churn. <br>
 
-The main python script is automated to perform the end to end data science workflow and uses the following function in order: 
+The main python script is automated to perform the following end to end data science workflow : 
 
 * Loads data from the csv dataset
 * Performs EDA
@@ -15,8 +13,6 @@ The main python script is automated to perform the end to end data science workf
 * Trains machine learning models using hyper parameter tuning
 * Outputs results: classification reports and ROC metric performance
 * Exports the models as a pickle files
-
-<kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/blob/main/images/churn-leaky-bucket.JPG"/> </kbd>
 
 ## 1. Credit card Dataset
 
@@ -50,6 +46,13 @@ Dataset Kaggle Reference: https://www.kaggle.com/sakshigoyal7/credit-card-custom
 
 ## 2. Running the Script - EDA, Data Pipeline and Modelling 
 
+```
+    ├───churn_package
+    │   │   churn_library.py
+    │   │   churn_script_logging_and_tests.py
+    │   │   __init__.py
+```
+
 In the churn_package directory, the 'churn_library.py' file performs the machine learning pipeline using the following funcation calls flow:
 
 1. import_data() : reads in the customer churn data
@@ -61,11 +64,11 @@ In the churn_package directory, the 'churn_library.py' file performs the machine
 7. feature_importance_plot(): creates and stores the feature importances for customer churn
 
 To run the pipeline that trains classifier and saves the outputs excecute the following in the `churn_package` directory <br>
-    ```cd churn_package```
+    ```cd churn_package``` <br>
     ```ipython churn_library.py```  
 
 To run a test suite of the pipeline excecute the following in the `churn_package` directory <br>
-    ```cd churn_package```
+    ```cd churn_package``` <br>
     ```ipython hurn_script_logging_and_tests.py```
 
 
@@ -86,11 +89,11 @@ The total transactions per customer distribution seems binomial with peaks at ap
 <kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/blob/main/images/eda/total_trans_ct_histogram.png"/> </kbd>  
 
 * Total_Trans_Ct - Total Transaction Count (Last 12 months) and Total_Amt_Chng_Q4_Q1 - Change in Transaction Amount (Q4 over Q1) have the strongest correlations with churn (though these are weak to moderate and negative)
-<kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/blob/main/images/eda/correlation_heatmap.png "/> </kbd> 
+<kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/blob/main/images/eda/correlation_heatmap.png"/> </kbd> 
 
 ## 4. Model Evaluation
 
-A Logistic Regression and Random Forst were used for the projects - these are saved in the models directory: 
+A Logistic Regression model and Random Forest model were used for the projects - these are saved in the models directory: 
 ```
 ├───models
 │       cv_logistic_regression.pkl
@@ -106,20 +109,23 @@ The best model tested was a tuned RandomForest classifier with the following hyp
 ```
 
 The model achieved an AUC of 0.99:
-<kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/blob/main/images/results/model_performance_roc_curves.png/> </kbd> 
+<kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/blob/main/images/results/model_performance_roc_curves.png"/> </kbd> 
 
 ## 5. Feature Importance
-The most iportant three features to predicting customer churn were:
+
+The most iportant three features for predicting customer churn are:
 ```
 1. Total_Trans_Ct : Total Transaction Count (Last 12 months) 
 2. Total_Trans_Amt : Total Transaction Amount (Last 12 months)
-3. * Total_Revolving_Bal : Total Revolving Balance on the Credit Card
+3. Total_Revolving_Bal : Total Revolving Balance on the Credit Card
 ```
 <kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/blob/main/images/results/random_forest_feature_importance.png"/> </kbd>
 
 <kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/blob/main/images/results/random_forest_feature_shap_values.png"/> </kbd>
 
 ## 6. Project Structure
+
+The project structure is shown below:
 
 ```
     │   README.md
@@ -130,9 +136,6 @@ The most iportant three features to predicting customer churn were:
     │   │   churn_library.py
     │   │   churn_script_logging_and_tests.py
     │   │   __init__.py
-    │   │
-    │   └───__pycache__
-    │           churn_library.cpython-38.pyc
     │
     ├───data
     │       bank_data.csv
