@@ -11,7 +11,7 @@ This contains the following functions:
 * perform_eda() : perform eda on churn_df and save figures to images folder
 * encoder_helper() : turn each categorical column into a new column with
                     propotion of churn for each category
-* perform_feature_engineering() : tests the perform_feature_engineering function
+* perform_feature_engineering() : selects releavnt features for the models
 * feature_importance_plot: creates and stores the feature importances in pth
 * classification_report_image : produces classification report for training and testing results 
                                 and stores report as image in images folder

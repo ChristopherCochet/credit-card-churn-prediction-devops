@@ -6,7 +6,7 @@
 
 In this project, we implement an end to end solution to identify credit card customers that are most likely to churn (binary classification). Customer information such  as age, salary, marital_status, credit card limit, credit card category etc. are provided. 16.07% of customers in the dataset have churned. The complete project follows PEP8 coding standards and engineering best practices for implementing software and includes a Python package which uses machine learning to predict customer churn. <br>
 
-The main python script is automated to perform the following end to end data science workflow : 
+The main python script is automated to perform the following end to end data science workflow: 
 
 * Loads data from the csv dataset
 * Performs EDA
@@ -60,8 +60,7 @@ In the churn_package directory, the 'churn_library.py' file performs the machine
 1. **import_data()** : reads in the customer churn data
 2. **perform_eda()** : performs eda on the churn dataframe
 3. **encoder_helper()** : turn each categorical column into a new column propotion of churn for each category
-4. **test_perform_feature_engineering()** : tests the perform_feature_engineering function
-5. **train_models()** : train, store model results: images + scores and store models
+4. **perform_feature_engineering()** : selects releavnt features for the models
 6. **classification_report_image()** : produces classification report for training and testing results and stores report as image in images folder
 7. **feature_importance_plot()** : creates and stores the feature importances for customer churn
 
@@ -90,7 +89,7 @@ Most customers are married :
 The total transactions per customer distribution seems binomial with peaks at approx. 40 and 75 : 
 <kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/blob/main/images/eda/total_trans_ct_histogram.png"/> </kbd>  
 
-* Total_Trans_Ct - Total Transaction Count (Last 12 months) and Total_Amt_Chng_Q4_Q1 - Change in Transaction Amount (Q4 over Q1) have the strongest correlations with churn (though these are weak to moderate and negative)
+* **Total_Trans_Ct** (Total Transaction Count - Last 12 months) and **Total_Amt_Chng_Q4_Q1** (Change in Transaction Amount - Q4 over Q1) have the strongest correlations with churn (though these are weak to moderate and negative)
 <kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/blob/main/images/eda/correlation_heatmap.png"/> </kbd> 
 
 ## 4. Model Evaluation
@@ -174,3 +173,4 @@ The project structure is shown below with the python requirements listed in the 
 ## Resources Used for This Project
 
 * Udacity Machine Learning DevOps Engineer Nanodegree: [here](https://www.udacity.com/course/machine-learning-dev-ops-engineer-nanodegree--nd0821) <br>
+* Noah Gift's Pragamatic AI / ML Ops Youtube Channel: [here]https://www.youtube.com/channel/UCNDfiL0D1LUeKWAkRE1xO5Q
