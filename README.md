@@ -55,13 +55,13 @@ Dataset Kaggle Reference: https://www.kaggle.com/sakshigoyal7/credit-card-custom
 
 In the churn_package directory, the 'churn_library.py' file performs the machine learning pipeline using the following funcation calls flow:
 
-1. import_data() : reads in the customer churn data
-2. perform_eda() : performs eda on the churn dataframe
-3. encoder_helper() : turn each categorical column into a new column propotion of churn for each category
-4. test_perform_feature_engineering() : tests the perform_feature_engineering function
-5. train_models() : train, store model results: images + scores and store models
-6. classification_report_image() : produces classification report for training and testing results and stores report as image in images folder
-7. feature_importance_plot(): creates and stores the feature importances for customer churn
+1. **import_data()** : reads in the customer churn data
+2. **perform_eda()** : performs eda on the churn dataframe
+3. **encoder_helper()** : turn each categorical column into a new column propotion of churn for each category
+4. **test_perform_feature_engineering()** : tests the perform_feature_engineering function
+5. **train_models()** : train, store model results: images + scores and store models
+6. **classification_report_image()** : produces classification report for training and testing results and stores report as image in images folder
+7. **feature_importance_plot()** : creates and stores the feature importances for customer churn
 
 To run the pipeline that trains classifier and saves the outputs excecute the following in the `churn_package` directory <br>
     ```cd churn_package``` <br>
@@ -69,7 +69,7 @@ To run the pipeline that trains classifier and saves the outputs excecute the fo
 
 To run a test suite of the pipeline excecute the following in the `churn_package` directory <br>
     ```cd churn_package``` <br>
-    ```ipython hurn_script_logging_and_tests.py```
+    ```ipython churn_script_logging_and_tests.py```
 
 
 Refer to the following Python file [here](https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/tree/main/images/churn_package\churn_library.py)
@@ -125,7 +125,7 @@ The most iportant three features for predicting customer churn are:
 
 ## 6. Project Structure
 
-The project structure is shown below:
+The project structure is shown below with the python requirements listed in the ```requirements.txt``` file.
 
 ```
     │   README.md
