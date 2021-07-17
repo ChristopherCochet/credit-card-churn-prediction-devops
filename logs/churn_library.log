@@ -1,0 +1,9 @@
+root - INFO - import_data() - with param ../data/bank_data.csv called
+root - INFO - perform_eda() - with param churn_df shape (10127, 23) called
+root - INFO - encoder_helper() with param churn_df shape (10127, 23) called with category list ['Gender', 'Education_Level', 'Marital_Status', 'Income_Category', 'Card_Category']
+root - INFO - perform_feature_engineering() with param churn_df shape (10127, 28) called
+root - INFO - train_models() with param X_churn_train ((7088, 19),), X_churn_test ((3039, 19),), y_churn_train ((7088,),),         y_churn_test ((3039,),) called
+root - INFO - train_models() - model cv_logistic_regression CV results = {'C': 100, 'penalty': 'l2'}
+root - INFO - train_models() - model cv_random_forest CV results = {'criterion': 'entropy', 'max_depth': 100, 'max_features': 'auto', 'n_estimators': 500}
+root - INFO - classification_report_image() with y_churn_train (7088,), y_churn_test (3039,),                  y_churn_train_preds_lr (7088,), y_churn_train_preds_rf (7088,), y_churn_test_preds_lr (3039,),                  y_churn_test_preds_rf (3039,), called
+root - INFO - feature_importance_plot() with for model Random Forest called
