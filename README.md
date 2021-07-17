@@ -91,9 +91,11 @@ The total transactions per customer distribution seems binomial with peaks at ap
 ## 4. Model Evaluation
 
 A Logistic Regression and Random Forst were used for the projects - these are saved in the models directory: 
+```
 ├───models
 │       cv_logistic_regression.pkl
 │       cv_random_forest.pkl
+```
 
 The best model tested was a tuned RandomForest classifier with the following hyperparamaters:
 ```
