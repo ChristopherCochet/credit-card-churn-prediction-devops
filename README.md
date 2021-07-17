@@ -1,7 +1,7 @@
 # Predict Customer Churn
 
 
-<kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/tree/main/images/images/project-overview.PNG"/> </kbd>
+<kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/blob/main/images/project-overview.PNG"/> </kbd>
 
 
 **Project description:** In this project, we implement an end to end solution to identify credit card customers that are most likely to churn (binary classification). Customer information such  as age, salary, marital_status, credit card limit, credit card category etc. are provided. 16.07% of customers in the dataset have churned. The complete project follows PEP8 coding standards and engineering best practices for implementing software and includes a Python package which uses machine learning to predict customer churn. <br>
@@ -16,7 +16,7 @@ The main python script is automated to perform the end to end data science workf
 * Outputs results: classification reports and ROC metric performance
 * Exports the models as a pickle files
 
-<kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/tree/main/images/images/churn-leaky-bucket.JPG"/> </kbd>
+<kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/blob/main/images/churn-leaky-bucket.JPG"/> </kbd>
 
 ## 1. Credit card Dataset
 
@@ -74,19 +74,19 @@ Refer to the following Python file [here](https://github.com/ChristopherCochet/c
 ## 3. EDA - Key takeaways
 
 The dataset is imbalanced - approx. 16% of customers have churned
-<kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/eda/churn_histogram.png"/> </kbd> 
+<kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/blob/main/images/eda/churn_histogram.png"/> </kbd> 
 
 The distribution of customer age approximately follows a normal distribution:
-<kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/tree/main/images/images/eda/customer_age_histogram.png"/> </kbd> 
+<kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/blob/main/images/eda/customer_age_histogram.png"/> </kbd> 
 
 Most customers are married : 
-<kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/tree/main/images/images/eda/marital_status_distribution.png"/> </kbd> 
+<kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/blob/main/images/eda/marital_status_distribution.png"/> </kbd> 
 
 The total transactions per customer distribution seems binomial with peaks at approx. 40 and 75 : 
-<kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/tree/main/images/images/eda/total_trans_ct_histogram.png"/> </kbd>  
+<kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/blob/main/images/eda/total_trans_ct_histogram.png"/> </kbd>  
 
 * Total_Trans_Ct - Total Transaction Count (Last 12 months) and Total_Amt_Chng_Q4_Q1 - Change in Transaction Amount (Q4 over Q1) have the strongest correlations with churn (though these are weak to moderate and negative)
-<kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/tree/main/images/images/eda/correlation_heatmap.png "/> </kbd> 
+<kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/blob/main/images/eda/correlation_heatmap.png "/> </kbd> 
 
 ## 4. Model Evaluation
 
@@ -106,7 +106,7 @@ The best model tested was a tuned RandomForest classifier with the following hyp
 ```
 
 The model achieved an AUC of 0.99:
-<kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/tree/main/images/images/results/model_performance_roc_curves.png/> </kbd> 
+<kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/blob/main/images/results/model_performance_roc_curves.png/> </kbd> 
 
 ## 5. Feature Importance
 The most iportant three features to predicting customer churn were:
@@ -115,9 +115,9 @@ The most iportant three features to predicting customer churn were:
 2. Total_Trans_Amt : Total Transaction Amount (Last 12 months)
 3. * Total_Revolving_Bal : Total Revolving Balance on the Credit Card
 ```
-<kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/tree/main/images/images/results/random_forest_feature_importance.png"/> </kbd>
+<kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/blob/main/images/results/random_forest_feature_importance.png"/> </kbd>
 
-<kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/tree/main/images/images/results/random_forest_feature_shap_values.png"/> </kbd>
+<kbd> <img src="https://github.com/ChristopherCochet/credit-card-churn-prediction-devops/blob/main/images/results/random_forest_feature_shap_values.png"/> </kbd>
 
 ## 6. Project Structure
 
