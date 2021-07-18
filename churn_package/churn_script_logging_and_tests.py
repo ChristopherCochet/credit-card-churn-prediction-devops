@@ -52,7 +52,7 @@ def test_eda(perform_eda):
                     'marital_status_distribution.png', \
                     'total_trans_ct_histogram.png', 'correlation_heatmap.png']
 
-    list_dir = os.listdir("../images/")
+    list_dir = os.listdir("../images/eda/")
     count = 0
     for file in list_dir:
         if file in expected_files:
@@ -121,7 +121,7 @@ def test_train_models(train_models):
                     'logistic_regression_classification_report.png', \
                     'model_performance_roc_curves.png' ]
 
-    list_dir = os.listdir("../images/")
+    list_dir = os.listdir("../images/results/")
     count_img = 0
     for file in list_dir:
         if file in expected_files:
